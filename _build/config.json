@@ -1,0 +1,21 @@
+{
+    "name": "UrlHistory"
+    ,"lowCaseName": "urlhistory"
+    ,"description": "Saves old document urls and redirects to new url."
+    ,"author": "Jiri Pavlicek"
+    ,"version": "1.0.0"
+    ,"package":{
+        ,"elements": {
+            "plugins": [{
+                "name": "UrlHistory"
+                ,"events": ["OnBeforeDocFormSave", "OnDocFormSave", "OnResourceSort"]
+            },{
+                "name": "UrlHistory404"
+                ,"events": ["OnPageNotFound"]
+            }]
+        }
+    }
+    ,"database": {
+        "tables": ["UrlHistoryItem"]
+    }
+}

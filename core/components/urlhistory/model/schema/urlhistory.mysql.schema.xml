@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="urlhistory" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="urlhistory">
+    <object class="UrlHistoryItem" table="urlhistory_items" extends="xPDOSimpleObject">
+        <field key="uri" dbtype="text" phptype="text" null="false" default="" />
+        <field key="docid" dbtype="int" precision="16" phptype="integer" null="false" default="0" />
+        <field key="responseCode" dbtype="int" precision="16" phptype="integer" null="false" default="301" />
+        <field key="count" dbtype="int" precision="16" phptype="integer" null="false" default="0" />
+    </object>
+</model>
